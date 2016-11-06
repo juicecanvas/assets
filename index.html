@@ -84,7 +84,7 @@ h2.lead {
     display: inline-block;
     border: 7px solid #322f31;
     font-size: 0.94rem;
-    padding: 4px 0 0 30px;
+    padding: 4px 0 0;
     box-sizing: border-box;
     text-align: center;
     }
@@ -120,7 +120,7 @@ h2.lead {
 }
 
 /* Position */
-@media (min-width: 768px) and (min-height: 768px) {
+@media (min-width: 768px) {
   #logo-box {
     position: absolute;
     text-align: center;
@@ -138,6 +138,10 @@ h2.lead {
     max-width: 456px;
     }
 
+  .address-box address a {
+    padding: 4px 0 0 30px;
+    }
+
   .address-box .address-link {
     border: 7px solid #322f31;
     float: left;
@@ -151,13 +155,18 @@ h2.lead {
     }
 }
 
-
+@media (max-height: 768px) {
+  #logo-box {
+    top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
 
 
 
 @media (min-width: 1400px) {
 .bg {
-  position: absolute;
+  position: fixed;
   }
 
   .bg-top-left {
