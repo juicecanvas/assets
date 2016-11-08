@@ -10,6 +10,16 @@
 <!-- Style -->
 <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 <style type="text/css">
+@font-face {
+    font-family: 'asm-bold';
+    src: url('assets/fonts/asm_bold-webfont.eot');
+    src: url('assets/fonts/asm_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/asm_bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/asm_bold-webfont.woff') format('woff'),
+         url('assets/fonts/asm_bold-webfont.svg#asm-bolduploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
   font-size: 100%;
 }
@@ -17,7 +27,7 @@ html {
 body {
   background: url('bg-paper-texture.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'ASM-Bold', "Helvetica Neue", "Helvetica", arial,'sans-serif';
+  font-family: 'asm-bold', "Helvetica Neue", "Helvetica", arial,'sans-serif';
   font-size: 1rem;
 }
 
@@ -84,16 +94,18 @@ h2.lead {
     color: #322f31;
     display: inline-block;
     border: 7px solid #322f31;
-    font-size: 0.94rem;
+    font-size: 0.88rem;
     padding: 4px 0 0;
     box-sizing: border-box;
     text-align: center;
+    height: 40px;
     }
   .address-box .address-link {
     background: #322f31;
     color: #fff;
     }
   .address-box .phone-link {
+    height: 40px;
     padding: 4px 0 0;
     border-top: 0;
     }
@@ -140,6 +152,7 @@ h2.lead {
     }
 
   .address-box address a {
+    font-size: 0.94rem;
     padding: 4px 0 0 30px;
     }
 
